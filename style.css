@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #F9EED7;
+    --secondary-color: #F1DEB5;
+    --third-color: #8C8066;
+    --forth-color: #AFA080;
+    --fifth-color: #C7B692;
+    --sixth-color: #DBC9A2;
+    --button-color: #B88319;
+    --acent-color: #C24428;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    width: 80vw;
+    height: 5000px;
+}
+
+h1 {
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+}
+
+p {
+    margin: 0;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-weight: 30;
+}
+
+.name {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.time-table {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    height: 760px;
+    gap: 20px;
+}
+
+.bar {
+    background-color: var(--secondary-color);
+    width: 100px;
+    height: 720px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar h1 {
+    margin: 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.bar:first-of-type {
+    background-color: var(--forth-color);
+}
+
+.bar:nth-of-type(3) {
+    background-color: var(--button-color);
+}
+
+.container {
+    flex: 1;
+    height: 760px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.time-bars {
+    border-radius: 20px;
+    height: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.time-bar {
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-bar-1 {
+    background-image: linear-gradient(to right, var(--third-color), var(--forth-color));
+}
+
+.time-bar-2 {
+    background-image: linear-gradient(to right, var(--forth-color), var(--fifth-color));
+}
+
+.time-bar-3 {
+    background-image: linear-gradient(to right, var(--fifth-color), var(--sixth-color));
+}
+
+.time-bar-4 {
+    background-image: linear-gradient(to right, var(--sixth-color), var(--button-color), var(--acent-color));
+}
+
+.cells-pack-1,
+.cells-pack-2 {
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sub-cell {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.s-cell {
+    flex: 1;
+    gap: 20px;
+    display: flex;
+}
+
+.cell {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s;
+}
